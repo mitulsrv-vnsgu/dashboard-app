@@ -1,0 +1,9 @@
+
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/CairoRegular.ttf"); font-family : "Cairo"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : bold; src: url("assets/fonts/CairoBold.ttf"); font-family : "Cairo"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : bold; src: url("assets/fonts/CairoSemiBold.ttf"); font-family : "Cairo"; font-weight : 600;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/LoraRegular.ttf"); font-family : "Lora"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : bold; src: url("assets/fonts/LoraBold.ttf"); font-family : "Lora"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : bold; src: url("assets/fonts/LoraMedium.ttf"); font-family : "Lora"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/LatoRegular.ttf"); font-family : "Lato"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : bold; src: url("assets/fonts/LatoBlack.ttf"); font-family : "Lato"; font-weight : 900;  }
