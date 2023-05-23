@@ -101,9 +101,9 @@ class Frame2135Screen extends StatelessWidget {
                         102,
                       ),
                       padding: getPadding(
-                        left: 15,
+                        left: 30,
                         top: 5,
-                        right: 15,
+                        right: 30,
                         bottom: 5,
                       ),
                       decoration: AppDecoration.outlineBlack9001.copyWith(
