@@ -5,11 +5,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 class PrefUtils {
   static SharedPreferences? _sharedPreferences;
 
-  PrefUtils() {
-    SharedPreferences.getInstance().then((value) {
-      _sharedPreferences = value;
-    });
+  static final PrefUtils? _instance = PrefUtils._internal();
+
+  factory PrefUtils() {
+    return _instance!;
   }
+
+  PrefUtils._internal();
 
   Future<void> init() async {
     _sharedPreferences ??= await SharedPreferences.getInstance();
