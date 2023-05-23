@@ -1,18 +1,17 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'core/app_export.dart';
 
-var globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
+  Future.wait([
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]),
+    PrefUtils().init()
   ]).then((value) {
-    PrefUtils().init();
     Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
     runApp(MyApp());
   });
@@ -22,26 +21,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      navigatorKey: NavigatorService.navigatorKey,
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         visualDensity: VisualDensity.standard,
       ),
-      scaffoldMessengerKey: globalMessengerKey,
+      translations: AppLocalization(),
+      locale: Get.deviceLocale,
       //for setting localization strings
-      supportedLocales: const [
-        Locale('en', ''),
-      ],
-      localizationsDelegates: [
-        AppLocalizationDelegate(),
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      title: 'mitul_s_application179',
+      fallbackLocale: Locale('en', 'US'),
+      title: 'mitul_s_application181',
+      initialBinding: InitialBindings(),
       initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.routes,
+      getPages: AppRoutes.pages,
     );
   }
 }
