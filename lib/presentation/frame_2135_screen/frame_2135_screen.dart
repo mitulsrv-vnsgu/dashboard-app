@@ -28,12 +28,11 @@ class Frame2135Screen extends StatelessWidget {
           ),
           leadingWidth: 60,
           leading: CustomIconButton(
-            height: 40,
+            height: 500,
             width: 40,
             margin: getMargin(
               left: 20,
               top: 15,
-              bottom: 10,
             ),
             child: CustomImageView(
               svgPath: ImageConstant.imgStar,
@@ -119,19 +118,6 @@ class Frame2135Screen extends StatelessWidget {
                             ),
                             width: getSize(
                               24,
-                            ),
-                          ),
-                          Padding(
-                            padding: getPadding(
-                              left: 4,
-                              top: 4,
-                              bottom: 4,
-                            ),
-                            child: Text(
-                              "lbl_button".tr,
-                              overflow: TextOverflow.ellipsis,
-                              textAlign: TextAlign.left,
-                              style: AppStyle.txtInterSemiBold12,
                             ),
                           ),
                         ],
