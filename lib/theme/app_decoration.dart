@@ -1,45 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mitul_s_application181/core/app_export.dart';
+import 'package:mitul_s_application182/core/app_export.dart';
 
 class AppDecoration {
-  static BoxDecoration get fillBlack9005e => BoxDecoration(
-        color: ColorConstant.black9005e,
-      );
-  static BoxDecoration get outlineBlack900 => BoxDecoration(
-        border: Border.all(
-          color: ColorConstant.black900,
-          width: getHorizontalSize(
-            1,
-          ),
-        ),
-      );
-  static BoxDecoration get txtFillGray300 => BoxDecoration(
-        color: ColorConstant.gray300,
-      );
-  static BoxDecoration get fillWhiteA700 => BoxDecoration(
-        color: ColorConstant.whiteA700,
+  static BoxDecoration get fillDeeppurpleA200 => BoxDecoration(
+        color: ColorConstant.deepPurpleA200,
       );
 }
 
-class BorderRadiusStyle {
-  static BorderRadius roundedBorder5 = BorderRadius.circular(
-    getHorizontalSize(
-      5,
-    ),
-  );
-
-  static BorderRadius circleBorder30 = BorderRadius.circular(
-    getHorizontalSize(
-      30,
-    ),
-  );
-
-  static BorderRadius circleBorder20 = BorderRadius.circular(
-    getHorizontalSize(
-      20,
-    ),
-  );
-}
+class BorderRadiusStyle {}
 
 // Comment/Uncomment the below code based on your Flutter SDK version.
 
