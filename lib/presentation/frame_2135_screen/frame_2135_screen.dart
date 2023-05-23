@@ -494,25 +494,6 @@ class Frame2135Screen extends StatelessWidget {
                                                   value: value));
                                         },
                                       ),
-                                      CustomRadioButton(
-                                        text: "lbl_previous_year".tr,
-                                        iconSize: getHorizontalSize(
-                                          10,
-                                        ),
-                                        value: state.frame2135ModelObj
-                                                ?.radioList[1] ??
-                                            "",
-                                        groupValue: state.radioGroup,
-                                        margin: getMargin(
-                                          left: 15,
-                                        ),
-                                        fontStyle: RadioFontStyle.InterMedium12,
-                                        onChange: (value) {
-                                          context.read<Frame2135Bloc>().add(
-                                              ChangeRadioButtonEvent(
-                                                  value: value));
-                                        },
-                                      ),
                                     ],
                                   )
                                 : Container();

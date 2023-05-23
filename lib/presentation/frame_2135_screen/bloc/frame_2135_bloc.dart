@@ -21,7 +21,7 @@ class Frame2135Bloc extends Bloc<Frame2135Event, Frame2135State> {
   }
 
   List<String> fillRadioList() {
-    return ["lbl_this_year", "lbl_previous_year"];
+    return ["lbl_this_year"];
   }
 
   _onInitialize(
